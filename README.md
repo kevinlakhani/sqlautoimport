@@ -76,3 +76,4 @@ SQL Auto Import (sqlautoimport) is uses the following open-source libraries, eac
  - Support for schema specification
  - Support for .json files
  - Support for specifying modes other than "replace" (e.g. "append")
+ - Support for different delimiters
