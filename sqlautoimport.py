@@ -1,6 +1,6 @@
 import pandas, sqlalchemy, tqdm, os, time, json, sys
 # https://docs.sqlalchemy.org/en/13/dialects/
-import psycopg2, sqlite3, cx_Oracle, pyodbc
+import psycopg2, sqlite3, cx_Oracle, pyodbc, MySQLdb
 
 def chunker(seq, size):
     # Thanks to miraculixx
