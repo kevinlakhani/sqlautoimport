@@ -18,7 +18,7 @@ This tool will use the names of your files as table names (in lowercase), so mak
 Only the default schema is currently supported.
 
 # Usage
-The source Python file (.py) is provided, which can be used on any system where Python is installed. For Windows users who do not wish to use or install Python, an executable file (.exe) is provided in the /dist/ folder ([or just download it here](https://github.com/kevinlakhani/sqlautoimport/raw/master/dist/sqlautoimport.exe).
+The source Python file (.py) is provided, which can be used on any system where Python is installed. For Windows users who do not wish to use or install Python, an executable file (.exe) is provided in the /dist/ folder ([or just download it here](https://github.com/kevinlakhani/sqlautoimport/raw/master/dist/sqlautoimport.exe)).
 
 Using the .exe file requires Microsoft Visual C++ to be installed on your system.
 
