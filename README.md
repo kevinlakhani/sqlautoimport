@@ -29,7 +29,7 @@ The when using the .py or .exe file, two arguments may be passed:
 
 If these arguments are not passed or if there is an issue with them, you will be prompted to enter those details.
 
-# Attributions (L
+# Attributions
 SQL Auto Import (sqlautoimport) is uses the following open-source libraries, each of which have their own copyright and license:
 
  - **pandas**
