@@ -1,6 +1,6 @@
 
 # SQL Auto Import (sqlautoimport)
-Welcome to the SQL Auto Import tool. This command-line tool, written in Python® allows you to quickly create/populate or replace tables in a SQL database with CSV files.
+Welcome to the SQL Auto Import tool. This command-line tool, written in Python®, allows you to quickly create/populate or replace tables in a SQL database with CSV files.
 
 PostreSQL, MySQL, SQLite, MSSQL, and Oracle dialects are supported.
 
