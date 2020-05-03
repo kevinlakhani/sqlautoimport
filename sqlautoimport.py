@@ -1,6 +1,8 @@
+print("Loading prerequisites...")
 import pandas, sqlalchemy, tqdm, os, time, json, sys
 # https://docs.sqlalchemy.org/en/13/dialects/
 import psycopg2, sqlite3, cx_Oracle, pyodbc, MySQLdb
+print()
 
 def chunker(seq, size):
     # Thanks to miraculixx
@@ -118,7 +120,7 @@ else:
 
 for f in file_list:
     if f.endswith(".csv"):
-        csv_files.append(os.path.join(csv_path, f))
+        csv_files.append(f)
 
 #test = pandas.read_sql('select * from baseline_cognitive_data', engine)
 #print(test)
@@ -134,7 +136,7 @@ Continue? [y/n]: '''
             print(f'Reading {str(csv_files[x])}...')
             df = None
             try:
-                df = pandas.read_csv(csv_files[x])
+                df = pandas.read_csv(os.path.join(csv_path,csv_files[x]))
             except Exception as e:
                 print(f'Error reading file: {str(csv_files[x])}')
                 print(e)
