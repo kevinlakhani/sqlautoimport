@@ -39,6 +39,7 @@ Therefore, it is also valid to simply double click on the `.exe` or `.py` and fo
 `sqlautoimport.py`
 
 # Roadmap
+ - [ ] MacOS and Linux packages/bundled executables
  - [ ] Support for schema specification
  - [ ] Support for `.json` files
  - [ ] Support for different delimiters and file extensions (e.g. `.tsv`)
