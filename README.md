@@ -44,6 +44,7 @@ Therefore, it is also valid to simply double click on the `.exe` or `.py` and fo
  - [ ] Support for `.json` files
  - [ ] Support for different delimiters and file extensions (e.g. `.tsv`)
  - [ ] Support for specifying modes other than `replace` (e.g. `append`)
+ - [ ] Web GUI
 
 
 # Attributions
