@@ -38,6 +38,17 @@ Therefore, it is also valid to simply double click on the `.exe` or `.py` and fo
 `sqlautoimport.exe`
 `sqlautoimport.py`
 
+A blank [config.json] file is also provided to if you'd like to build your own config file without following the command line prompts. It looks like this:
+```
+{
+	"dialect":"",
+	"host":"",
+	"database":"",
+	"port":"",
+	"username":"",
+	"password":""
+}
+```
 # Roadmap
  - [ ] macOS and Linux packages/bundled executables
  - [ ] Support for Redshift, Presto and [other "external" dialects](https://docs.sqlalchemy.org/en/13/dialects/#external-dialects)
