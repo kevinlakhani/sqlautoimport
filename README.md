@@ -1,6 +1,6 @@
 
-# SQL Auto Import (sqlautoimport)
-[icon](https://raw.githubusercontent.com/kevinlakhani/sqlautoimport/1fb8a56c1e288cacfbc07ba997b5656be08c16e7/icon/icon.svg) Welcome to the SQL Auto Import tool. This command-line tool, written in Python®, allows you to quickly create/populate or replace tables in a SQL database with CSV files.
+# <img src="https://raw.githubusercontent.com/kevinlakhani/sqlautoimport/1fb8a56c1e288cacfbc07ba997b5656be08c16e7/icon/icon.svg" alt="icon" height="30"/> SQL Auto Import (sqlautoimport)
+SQL Auto Importis a command-line tool, written in Python®, that allows you to quickly create/populate or replace tables in a SQL database with CSV files.
 
 PostreSQL, MySQL, SQLite, MSSQL (Microsoft SQL Server/T-SQL), and Oracle dialects are supported.
 
