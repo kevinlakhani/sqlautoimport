@@ -39,12 +39,15 @@ Therefore, it is also valid to simply double click on the `.exe` or `.py` and fo
 `sqlautoimport.py`
 
 # Roadmap
- - [ ] MacOS and Linux packages/bundled executables
+ - [ ] macOS and Linux packages/bundled executables
+ - [ ] Support for Redshift, Presto and [other "external" dialects](https://docs.sqlalchemy.org/en/13/dialects/#external-dialects)
  - [ ] Support for schema specification
  - [ ] Support for `.json` files
  - [ ] Support for different delimiters and file extensions (e.g. `.tsv`)
  - [ ] Support for specifying modes other than `replace` (e.g. `append`)
  - [ ] Web GUI
+ - [ ] Override default column type settings (e.g. specify a column as `money` instead of `double` or `smallint` instead of `bigint`)
+ - [ ] Performance tuning: specify chunk size and/or auto-select settings based on data size
 
 
 # Attributions
