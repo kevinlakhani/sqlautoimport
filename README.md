@@ -19,7 +19,7 @@ This tool will use the names of your files as table names (*in lowercase*), so m
 Only the default schema is currently supported, but support for specifying the schema is on the roadmap (below).
 
 # Usage
-The source Python file (`sqlautoimport.py`) is provided, which can be used on any system (Windows, MacOS, Linux) where Python is installed. 
+The source Python file (`sqlautoimport.py`) is provided, which can be used on any system (Windows, MacOS, Linux) where Python is installed. Dependencies listed in [requirements.txt](https://github.com/kevinlakhani/sqlautoimport/blob/master/requirements.txt) will need to be installed.
 
 For Windows users who do not wish to use or install Python, a [64-bit executable file (.exe)](https://github.com/kevinlakhani/sqlautoimport/raw/master/sqlautoimport.exe) is also provided.
 
