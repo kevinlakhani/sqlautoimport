@@ -1,5 +1,7 @@
 *.test
 *.spec
+*.bat
 build
 dist
+ve
 __pycache__

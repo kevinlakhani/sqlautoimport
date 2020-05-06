@@ -1,7 +1,5 @@
 print("Loading prerequisites...")
 import pandas, sqlalchemy, tqdm, os, time, json, sys
-# https://docs.sqlalchemy.org/en/13/dialects/
-import psycopg2, sqlite3, cx_Oracle, pyodbc, MySQLdb
 print()
 
 
@@ -32,7 +30,7 @@ to input the information below. You will have the
 options to save the connection settings.
 
 Additionally, you will need to specify a directory
-path to your CSV files (e.g. C:\MyFiles). You can
+path to your CSV files (e.g. "C:\\Data\\CSV"). You can
 also pass this in as a second command-line argument.
 
 If you do not enter a path, the local directory will
@@ -95,33 +93,45 @@ if any(settings[x] == '' for x in settings.keys()):
             config_file.write(new_config)
             print('config.json saved succefully')
             print()
+
+# https://docs.sqlalchemy.org/en/13/dialects/
+
 dialect = ''
+suffix = ''
 if settings['dialect'].lower() in ['postgres', 'postgresql']:
     dialect = 'postgres'
+    import psycopg2
 elif settings['dialect'].lower() == 'mysql':
     dialect = 'mysql+mysqldb'
+    import MySQLdb
 elif settings['dialect'].lower() == 'sqlite':
     dialect = 'sqlite+pysqlite'
+    import sqlite3
 elif settings['dialect'].lower() == 'oracle':
     dialect = 'oracle+cx_oracle'
+    import cx_Oracle
 elif settings['dialect'].lower() == 'mssql':
     dialect = 'mssql+pyodbc'
+    suffix = '?driver=SQL+Server'
+    # Additional driver options may be needed here, see:
+    # https://github.com/mkleehammer/pyodbc/wiki/Connecting-to-SQL-Server-from-Windows
+    import pyodbc
 
-
-uri = f"{dialect}://{settings['username']}:{settings['password']}@{settings['host']}:{settings['port']}/{settings['database']}"
+uri = f"{dialect}://{settings['username']}:{settings['password']}@{settings['host']}:{settings['port']}/{settings['database']}{suffix}"
 print()
 print('The following connection URI will be used:')
 print(uri)
 print()
-# paramstyle = 'format' ensure that columns with ")" in them will still work.
-# See: https://github.com/pandas-dev/pandas/issues/8762
+
 if dialect == 'postgres':
+    # The `paramstyle='format'` below ensures that columns with ")" in them will still work for Postgres.
+    # See: https://github.com/pandas-dev/pandas/issues/8762 
     engine = sqlalchemy.create_engine(uri, paramstyle='format')
 else:
     engine = sqlalchemy.create_engine(uri)
 
 if csv_path == '':
-    csv_path = input('Directory Path: ')
+    csv_path = input('Directory Path: ').replace('"','')
 
 csv_files, file_list = [], []
 
@@ -181,9 +191,9 @@ Seconds per row: {(finish - start)/(len(df.index)):0.4f}
             print('Finished!')
         else:
             print('Finished with the following errors:')
-            for f, e in errors:
-                print(f'File: {f}')
-                print(f'Error: {e}')
+            for e in errors.keys():
+                print(f'File: {e}')
+                print(f'Error: {errors[e]}')
                 print()
 else:
     print('No CSV files found in the specified directory.')

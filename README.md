@@ -102,4 +102,6 @@ SQL Auto Import (sqlautoimport) is uses the following open-source libraries, eac
 - **os**, **time**, **json**, **sys**, and any other Python built-in libraries:
 	- License: [https://wiki.python.org/moin/PythonSoftwareFoundationLicenseFaq](https://wiki.python.org/moin/PythonSoftwareFoundationLicenseFaq) 
 
+[PyInstaller](https://github.com/pyinstaller/pyinstaller) is used for building packaged executables.
+
 "Python" is a registered trademark of the [Python Software Foundation]([https://www.python.org/psf/)
