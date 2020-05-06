@@ -41,6 +41,8 @@ Therefore, it is also valid to simply double click on the `.exe` or `.py` and fo
 
 `sqlautoimport.exe`
 
+or
+
 `sqlautoimport.py`
 
 A blank [config.json] file is also provided to if you'd like to build your own config file without following the command line prompts. It looks like this:
