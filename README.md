@@ -30,8 +30,11 @@ The when running the .py or .exe file, two command-line arguments may be passed:
  2. The folder path of the CSV files to be imported to your database
 
 For example, any of the following inputs are valid ways to run this program from the command line:
+
 `sqlautoimport.exe config.json "C:\Path\To\My CSV Files"`
+
 `sqlautoimport.exe custom_connection.json C:\users\me\files`
+
 If these arguments are not passed or if there is an issue with them, you will be prompted to enter those details.
 
 Therefore, it is also valid to simply double click on the `.exe` or `.py` and follow the prompts or to run either file from the command line without extra arguments, e.g.
