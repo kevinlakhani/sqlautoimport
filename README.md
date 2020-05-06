@@ -38,7 +38,9 @@ For example, any of the following inputs are valid ways to run this program from
 If these arguments are not passed or if there is an issue with them, you will be prompted to enter those details.
 
 Therefore, it is also valid to simply double click on the `.exe` or `.py` and follow the prompts or to run either file from the command line without extra arguments, e.g.
+
 `sqlautoimport.exe`
+
 `sqlautoimport.py`
 
 A blank [config.json] file is also provided to if you'd like to build your own config file without following the command line prompts. It looks like this:
