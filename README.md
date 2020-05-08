@@ -1,5 +1,6 @@
 
 
+
 # <img src="https://raw.githubusercontent.com/kevinlakhani/sqlautoimport/1fb8a56c1e288cacfbc07ba997b5656be08c16e7/icon/icon.svg" alt="icon" height="30"/> SQL Auto Import (sqlautoimport)
 SQL Auto Import is a command-line tool, written in [Python](https://www.python.org/)®, that allows you to quickly create/populate or replace tables in a SQL database with multiple CSV files.
 
@@ -57,16 +58,16 @@ A blank [config.json] file is also provided to if you'd like to build your own c
 }
 ```
 # Roadmap
+ - [ ] Implement `argparse` library for more flexible command-line usage 
+	 - [ ] Support for different delimiters and file extensions (e.g. `.tsv`)
+	 - [ ] Support for specifying modes other than `replace` (e.g. `append`)
+	 - [ ] Support for `.json` files
+	 - [ ] Support for schema specification
+	 - [ ] Performance tuning: specify chunk size and/or auto-select settings based on data size
  - [ ] macOS and Linux packages/bundled executables
  - [ ] Support for Redshift, Presto and [other "external" dialects](https://docs.sqlalchemy.org/en/13/dialects/#external-dialects)
- - [ ] Support for schema specification
- - [ ] Support for `.json` files
- - [ ] Support for different delimiters and file extensions (e.g. `.tsv`)
- - [ ] Support for specifying modes other than `replace` (e.g. `append`)
- - [ ] Web GUI
  - [ ] Override default column type settings (e.g. specify a column as `money` instead of `double` or `smallint` instead of `bigint`)
- - [ ] Performance tuning: specify chunk size and/or auto-select settings based on data size
-
+ - [ ] Web GUI
 
 # Attributions
 SQL Auto Import (sqlautoimport) uses the following open-source libraries, each of which have their own copyright and license:
