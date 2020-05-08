@@ -69,7 +69,7 @@ A blank [config.json] file is also provided to if you'd like to build your own c
 
 
 # Attributions
-SQL Auto Import (sqlautoimport) is uses the following open-source libraries, each of which have their own copyright and license:
+SQL Auto Import (sqlautoimport) uses the following open-source libraries, each of which have their own copyright and license:
 
  - **pandas**
 	 - License: [https://github.com/pandas-dev/pandas/blob/master/LICENSE](https://github.com/pandas-dev/pandas/blob/master/LICENSE)
