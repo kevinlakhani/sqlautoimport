@@ -70,13 +70,16 @@ A blank [config.json] file is also provided to if you'd like to build your own c
  - [ ] Web GUI
 
 # Attributions
-SQL Auto Import (sqlautoimport) uses the following open-source libraries, each of which have their own copyright and license:
+SQL Auto Import ("sqlautoimport") uses the following open-source libraries, each of which have their own copyright and license:
 
  - **pandas**
 	 - License: [https://github.com/pandas-dev/pandas/blob/master/LICENSE](https://github.com/pandas-dev/pandas/blob/master/LICENSE)
 	 - Copyright
 		 - Copyright (c) 2008-2011, AQR Capital Management, LLC, Lambda Foundry, Inc. and PyData Development Team. All rights reserved.
 		 - Copyright (c) 2011-2020, Open source contributors.
+ - **NumPy**
+ 	 - License: https://github.com/numpy/numpy/blob/master/LICENSE.txt
+	 - Copyright: Copyright (c) 2005-2020, NumPy Developers.
  - **sqlalchemy**
 	 - License [https://github.com/sqlalchemy/sqlalchemy/blob/master/LICENSE](https://github.com/sqlalchemy/sqlalchemy/blob/master/LICENSE)
 	 - Copyright:
@@ -107,8 +110,9 @@ SQL Auto Import (sqlautoimport) uses the following open-source libraries, each o
 		- Portions Copyright 2001-2007, Computronix (Canada) Ltd., Edmonton, Alberta, Canada. All rights reserved.
 - **mysqlclient**:
 	- License: [https://github.com/PyMySQL/mysqlclient-python/blob/master/LICENSE](https://github.com/PyMySQL/mysqlclient-python/blob/master/LICENSE)
-- **os**, **time**, **json**, **sys**, and any other Python built-in libraries:
-	- License: [https://wiki.python.org/moin/PythonSoftwareFoundationLicenseFaq](https://wiki.python.org/moin/PythonSoftwareFoundationLicenseFaq) 
+- **Python** and any Python built-in libraries:
+	- License: [https://docs.python.org/3.7/license.html](https://docs.python.org/3.7/license.html)
+	- Additional info: [https://wiki.python.org/moin/PythonSoftwareFoundationLicenseFaq](https://wiki.python.org/moin/PythonSoftwareFoundationLicenseFaq) 
 
 [PyInstaller](https://github.com/pyinstaller/pyinstaller) is used for building packaged executables.
 
