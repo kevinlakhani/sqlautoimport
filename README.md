@@ -4,7 +4,7 @@ SQL Auto Import is a command-line interface tool, written in [Python](https://ww
 
 This alleviates the hassle of manually writing create statements, then importing files one-by-one. Just point the SQL Auto Import tool to the directory containing your files and enter your database credentials - let SQL Auto Import do the rest.
 
-Worried about security or privacy? SQL Auto Import is open-source, so you can [review the source code](https://github.com/kevinlakhani/sqlautoimport/blob/master/sqlautoimport.py) to investigate any concerns. If you find an issue, report it [here](https://github.com/kevinlakhani/sqlautoimport/issues)!
+Worried about security or privacy? SQL Auto Import is open-source, so you can [view the source code](https://github.com/kevinlakhani/sqlautoimport/blob/master/sqlautoimport.py) to investigate any concerns. If you find an issue, report it [here](https://github.com/kevinlakhani/sqlautoimport/issues)!
 
 PostreSQL, MySQL, SQLite, MSSQL (Microsoft SQL Server/T-SQL), and Oracle SQL flavors are supported. More flavors are on the [roadmap](#roadmap).
 
