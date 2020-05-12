@@ -1,0 +1,60 @@
+sqlautoimport/SQL Auto Import is a product of collaborative work and
+combines code from multiple free software libraries. All authors
+retain copyright for their respective work.
+
+ATTRIBUTIONS:
+pandas
+	License: https://github.com/pandas-dev/pandas/blob/master/LICENSE
+	Copyright (c) 2008-2011, AQR Capital Management, LLC, Lambda Foundry, Inc. and PyData Development Team. All rights reserved.
+	Copyright (c) 2011-2020, Open source contributors.
+sqlalchemy
+	License https://github.com/sqlalchemy/sqlalchemy/blob/master/LICENSE
+	Copyright 2005-2020 SQLAlchemy authors and contributors <see AUTHORS file>.
+tqdm
+	License: https://github.com/tqdm/tqdm/blob/master/LICENCE
+	Copyright:
+		MPLv2.0 2015-2020 (c) Casper da Costa-Luis
+		MIT 2016 (c) [PR #96] on behalf of Google Inc.
+		MIT 2013 (c) Noam Yorav-Raphael, original author.
+psycopg2
+	License:
+	https://github.com/psycopg/psycopg2/blob/master/LICENSE
+	https://www.psycopg.org/license/
+	Copyright:
+	?
+sqlite3
+	License: https://www.sqlite.org/copyright.html
+	Copyright: Public Domain
+pyodbc
+	License: https://github.com/mkleehammer/pyodbc/blob/master/LICENSE.txt
+cx_Oracle
+	License: https://github.com/oracle/python-cx_Oracle/blob/master/LICENSE.txt
+	Copyright:
+		Copyright 2016, 2018, Oracle and/or its affiliates. All rights reserved.
+		Portions Copyright 2007-2015, Anthony Tuininga. All rights reserved.
+		Portions Copyright 2001-2007, Computronix (Canada) Ltd., Edmonton, Alberta, Canada. All rights reserved.
+mysqlclient:
+	License: https://github.com/PyMySQL/mysqlclient-python/blob/master/LICENSE
+os, time, json, sys, and any other Python built-in libraries:
+	License: https://wiki.python.org/moin/PythonSoftwareFoundationLicenseFaq
+
+All other code, original to sqlautoimport is Copyright (c) 2020 Kevin Lakhani
+unless otherwise stated or attributed elsewhere.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
