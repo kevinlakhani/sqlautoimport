@@ -1,3 +1,4 @@
+
 # <img src="https://raw.githubusercontent.com/kevinlakhani/sqlautoimport/1fb8a56c1e288cacfbc07ba997b5656be08c16e7/icon/icon.svg" alt="icon" height="30"/> SQL Auto Import (sqlautoimport)
 SQL Auto Import is a command-line interface (CLI) tool, written in [Python](https://www.python.org/)®, that allows you to quickly create/populate or replace tables in a SQL database with multiple CSV files.
 
@@ -6,12 +7,12 @@ PostreSQL, MySQL, SQLite, MSSQL (Microsoft SQL Server/T-SQL), and Oracle dialect
 SQL Auto Import is available for Windows, macOS, and Linux
 
 # Downloads
-Note: When opening a portable executable file, allow a few moments for initialization.
 
 ## Windows
 
-Download: [Portable 64-bit executable file (.exe)](https://github.com/kevinlakhani/sqlautoimport/raw/master/sqlautoimport.exe)
-Download: [Portable 32-bit executable file (.exe)](https://github.com/kevinlakhani/sqlautoimport/raw/master/sqlautoimport-32.exe)
+64-bit Download: [Portable 64-bit executable file (.exe)](https://github.com/kevinlakhani/sqlautoimport/raw/master/sqlautoimport.exe)
+
+32-bit Download: [Portable 32-bit executable file (.exe)](https://github.com/kevinlakhani/sqlautoimport/raw/master/sqlautoimport-32.exe)
 
 ## macOS, Linux, and others
 In progress. 
@@ -89,83 +90,15 @@ Optional Arguments:
 	 - [x] ~~Support for different delimiters and file extensions (e.g. `.tsv`)~~
 	 - [x] ~~Support for specifying modes other than `replace` (e.g. `append`)~~
 	 - [ ] Support for `.json` files
+	 - [ ] Option to recursively search for files in DIRECTORY
 	 - [x] ~~Support for schema specification~~
 	 - [ ] Performance tuning: specify chunk size and/or auto-select settings based on data size
- - [ ] macOS and Linux packages/bundled executables
+ - [ ] macOS and Linux bundles
  - [ ] Automated unit and functional tests
  - [ ] Support for Redshift, Presto and [other "external" dialects](https://docs.sqlalchemy.org/en/13/dialects/#external-dialects)
  - [ ] Override default column type settings (e.g. specify a column as `money` instead of `double` or `smallint` instead of `bigint`)
  - [ ] Web GUI
 
-# Attributions
-SQL Auto Import ("sqlautoimport") uses the following open-source libraries, each of which have their own copyright and license:
-
- - **pandas**
-	 - License: [https://github.com/pandas-dev/pandas/blob/master/LICENSE](https://github.com/pandas-dev/pandas/blob/master/LICENSE)
-	 - Copyright
-		 - Copyright (c) 2008-2011, AQR Capital Management, LLC, Lambda Foundry, Inc. and PyData Development Team. All rights reserved.
-		 - Copyright (c) 2011-2020, Open source contributors.
- - **NumPy**
- 	 - License: https://github.com/numpy/numpy/blob/master/LICENSE.txt
-	 - Copyright: Copyright (c) 2005-2020, NumPy Developers.
- - **sqlalchemy**
-	 - License [https://github.com/sqlalchemy/sqlalchemy/blob/master/LICENSE](https://github.com/sqlalchemy/sqlalchemy/blob/master/LICENSE)
-	 - Copyright:
-		 - Copyright 2005-2020 SQLAlchemy authors and contributors \<see AUTHORS file>.
-- **tqdm**
-	- License: [https://github.com/tqdm/tqdm/blob/master/LICENCE](https://github.com/tqdm/tqdm/blob/master/LICENCE)
-	- Copyright:
-		- MPLv2.0 2015-2020 (c) Casper da Costa-Luis
-		- MIT 2016 (c) [PR #96] on behalf of Google Inc.
-		- MIT 2013 (c) Noam Yorav-Raphael, original author.
-- **psycopg2**
-	 - License: 
-		 - [https://github.com/psycopg/psycopg2/blob/master/LICENSE](https://github.com/psycopg/psycopg2/blob/master/LICENSE)
-		 - [https://www.psycopg.org/license/](https://www.psycopg.org/license/)
-	 - Copyright:
-		 - ?
- -  **sqlite3**
-	 - License: [https://www.sqlite.org/copyright.html](https://www.sqlite.org/copyright.html)
-	 - Copyright:
-		 - Public Domain
-- **pyodbc**
-	- License: [https://github.com/mkleehammer/pyodbc/blob/master/LICENSE.txt](https://github.com/mkleehammer/pyodbc/blob/master/LICENSE.txt)
-- **cx_Oracle**
-	- License: [https://github.com/oracle/python-cx_Oracle/blob/master/LICENSE.txt](https://github.com/oracle/python-cx_Oracle/blob/master/LICENSE.txt)
-	- Copyright: 
-		- Copyright 2016, 2018, Oracle and/or its affiliates. All rights reserved.
-		- Portions Copyright 2007-2015, Anthony Tuininga. All rights reserved.
-		- Portions Copyright 2001-2007, Computronix (Canada) Ltd., Edmonton, Alberta, Canada. All rights reserved.
-- **mysqlclient**:
-	- License: [https://github.com/PyMySQL/mysqlclient-python/blob/master/LICENSE](https://github.com/PyMySQL/mysqlclient-python/blob/master/LICENSE)
-- **Python** and any Python built-in libraries:
-	- License: [https://docs.python.org/3.7/license.html](https://docs.python.org/3.7/license.html)
-	- Additional info: [https://wiki.python.org/moin/PythonSoftwareFoundationLicenseFaq](https://wiki.python.org/moin/PythonSoftwareFoundationLicenseFaq) 
-
-[PyInstaller](https://github.com/pyinstaller/pyinstaller) is used for building packaged executables.
+# 
 
 "Python" is a registered trademark of the [Python Software Foundation]([https://www.python.org/psf/)
-
-
-```
- _____  _____  _
-/  ___||  _  || |
-\ `--. | | | || |
- `--. \| | | || |
-/\__/ /\ \/' /| |____
-\____/  \_/\_\\_____/
-  ___          _
- / _ \        | |
-/ /_\ \ _   _ | |_   ___
-|  _  || | | || __| / _ \
-| | | || |_| || |_ | (_) |
-\_| |_/ \__,_| \__| \___/
- _____                                 _
-|_   _|                               | |
-  | |   _ __ ___   _ __    ___   _ __ | |_
-  | |  | '_ ` _ \ | '_ \  / _ \ | '__|| __|
- _| |_ | | | | | || |_) || (_) || |   | |_
- \___/ |_| |_| |_|| .__/  \___/ |_|    \__|
-                  | |
-                  |_|
-```
