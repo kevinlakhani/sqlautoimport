@@ -9,9 +9,9 @@ SQL Auto Import is available for Windows, macOS, and Linux
 Note: When opening a portable executable file, allow a few moments for initialization.
 
 ## Windows
+
 Download: [Portable 64-bit executable file (.exe)](https://github.com/kevinlakhani/sqlautoimport/raw/master/sqlautoimport.exe)
 Download: [Portable 32-bit executable file (.exe)](https://github.com/kevinlakhani/sqlautoimport/raw/master/sqlautoimport-32.exe)
-
 
 ## macOS, Linux, and others
 In progress. 
@@ -39,7 +39,7 @@ sqlautoimport.exe --directory "C:\My Files" --flavor mysql --host my.host.com --
 
 Additionally, be sure to use the `--schema` argument if you need to load files into a schema in your database other than its default schema.
 
-While SQL Auto Import expects a comma-delimited, CSV (`.csv`) file by default, you can specify a different file extension through the `--extension` argument. If your files are not comma-delimited, you will also need to use the `--delimiter`argument.
+While SQL Auto Import expects a comma-delimited, CSV (`.csv`) file by default, you can specify a different file extension through the `--extension` argument. If your files are not comma-delimited, you will also need to use the `--delimiter`argument. For example, for tab-separated files use `--delimiter \t`. For pipe-delimited files, use `--delimiter |`.
 
 There are additional options to help with flexibility and automation needs, such as `-s` and `-y`. For more information, use the `--help` argument. Its full output is shown below for your convenience:
 ```

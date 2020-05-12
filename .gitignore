@@ -3,6 +3,7 @@
 *.bat
 build
 dist
-sqlautoimport_win64
+sqlautoimport-win64
+sqlautoimport-win64.*
 ve
 __pycache__
