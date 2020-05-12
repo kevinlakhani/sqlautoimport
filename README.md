@@ -26,14 +26,14 @@ Dependencies listed in [requirements.txt](https://github.com/kevinlakhani/sqlaut
 # Usage
 Open Command Prompt in the directory your copy of `sqlautoimport.exe` (or `sqlautoimport-32.exe`) is located. Alternatively, you can point the Command Prompt to the full directory path where your executable is located.
 
-For regular usage, you must specify the FLAVOR, HOST, PORT, DATABASE, USERNAME, and PASSWORD to connect to. 
+For regular usage, you must specify the `FLAVOR`, `HOST`, `PORT`, `DATABASE`, `USERNAME`, and `PASSWORD` to connect to. 
 
 Current supported FLAVOR choices are:
 `postgresql`, `mysql`, `sqlite` ,`oracle`, and `mssql`
 Which correspond to
 [PostgreSQL](https://www.postgresql.org/), [MySQL](https://www.mysql.com/), [SQLite](https://sqlite.org), [Oracle](https://oracle.com), and [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/default.aspx). More flavor compatibility is coming soon.
 
-You will probably also want to include the DIRECTORY where your files are located, but if you don't it will be assumed that the local directory contains the files you want to import to your database. 
+You will probably also want to include the `DIRECTORY` where your files are located, but if you don't it will be assumed that the local directory contains the files you want to import to your database. 
 
 Here's an example command:
 ```
@@ -91,7 +91,7 @@ Optional Arguments:
 	 - [x] ~~Support for different delimiters and file extensions (e.g. `.tsv`)~~
 	 - [ ] Support for specifying modes other than `replace` (e.g. `append`)
 	 - [ ] Support for `.json` files
-	 - [ ] Option to recursively search for files in DIRECTORY
+	 - [ ] Option to recursively search for files in `DIRECTORY`
 	 - [x] ~~Support for schema specification~~
 	 - [ ] Performance tuning: specify chunk size and/or auto-select settings based on data size
  - [ ] macOS and Linux bundles
