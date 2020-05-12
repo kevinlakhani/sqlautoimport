@@ -2,7 +2,7 @@
 # <img src="https://raw.githubusercontent.com/kevinlakhani/sqlautoimport/1fb8a56c1e288cacfbc07ba997b5656be08c16e7/icon/icon.svg" alt="icon" height="30"/> SQL Auto Import (sqlautoimport)
 SQL Auto Import is a command-line interface tool, written in [Python](https://www.python.org/)®, that allows you to quickly create, populate, and/or replace tables in a SQL database with multiple source files.
 
-This alleviates the hassle of manually writing `CREATE TABLE` statements, then importing files one-by-one. Just point the SQL Auto Import tool to the directory containing your files and enter your database credentials - let SQL Auto Import do the rest.
+This alleviates the hassle of manually writing `CREATE TABLE` statements and laboriously importing files one-by-one. Just point the SQL Auto Import tool to the directory containing your files and enter your database credentials - let SQL Auto Import do the rest.
 
 PostreSQL, MySQL, SQLite, MSSQL (Microsoft SQL Server/T-SQL), and Oracle SQL flavors are supported. More flavors are on the [project roadmap](#roadmap).
 
