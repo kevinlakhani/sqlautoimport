@@ -28,7 +28,7 @@ Open Command Prompt in the directory your copy of `sqlautoimport.exe` (or `sqlau
 
 For regular usage, you must specify the `FLAVOR`, `HOST`, `PORT`, `DATABASE`, `USERNAME`, and `PASSWORD` to connect to. 
 
-Current supported FLAVOR choices are:
+Current supported `FLAVOR` choices are:
 `postgresql`, `mysql`, `sqlite` ,`oracle`, and `mssql`
 Which correspond to
 [PostgreSQL](https://www.postgresql.org/), [MySQL](https://www.mysql.com/), [SQLite](https://sqlite.org), [Oracle](https://oracle.com), and [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/default.aspx). More flavor compatibility is coming soon.
