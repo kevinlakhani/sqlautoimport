@@ -1,10 +1,12 @@
 
 # <img src="https://raw.githubusercontent.com/kevinlakhani/sqlautoimport/1fb8a56c1e288cacfbc07ba997b5656be08c16e7/icon/icon.svg" alt="icon" height="30"/> SQL Auto Import (sqlautoimport)
-SQL Auto Import is a command-line interface (CLI) tool, written in [Python](https://www.python.org/)®, that allows you to quickly create/populate or replace tables in a SQL database with multiple CSV files.
+SQL Auto Import is a command-line interface tool, written in [Python](https://www.python.org/)®, that allows you to quickly create, populate, and/or replace tables in a SQL database with multiple source files.
 
-PostreSQL, MySQL, SQLite, MSSQL (Microsoft SQL Server/T-SQL), and Oracle dialects are supported.
+This alleviates the hassle of manually writing create statements, then importing files one-by-one. Just point the SQL Auto Import tool to the directory containing your files and enter your database credentials - let SQL Auto Import do the rest.
 
-SQL Auto Import is available for Windows, macOS, and Linux
+Worried about security or privacy? SQL Auto Import is open-source, so you can [review the source code](https://github.com/kevinlakhani/sqlautoimport/blob/master/sqlautoimport.py) to investigate any concerns. If you find an issue, report it [here](https://github.com/kevinlakhani/sqlautoimport/issues)!
+
+PostreSQL, MySQL, SQLite, MSSQL (Microsoft SQL Server/T-SQL), and Oracle SQL flavors are supported. More flavors are on the [roadmap](#roadmap).
 
 # Downloads
 
@@ -84,11 +86,10 @@ Optional Arguments:
   -y, --yes             Skip all confirmations. WARNING: This is dangerous.
 ```
 
-
 # Roadmap
  - [x] ~~Implement `argparse` library for more flexible command-line usage~~ 
 	 - [x] ~~Support for different delimiters and file extensions (e.g. `.tsv`)~~
-	 - [x] ~~Support for specifying modes other than `replace` (e.g. `append`)~~
+	 - [ ] Support for specifying modes other than `replace` (e.g. `append`)
 	 - [ ] Support for `.json` files
 	 - [ ] Option to recursively search for files in DIRECTORY
 	 - [x] ~~Support for schema specification~~
