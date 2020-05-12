@@ -28,7 +28,7 @@ Open Command Prompt in the directory your copy of `sqlautoimport.exe` (or `sqlau
 
 For regular usage, you must specify the FLAVOR, HOST, PORT, DATABASE, USERNAME, and PASSWORD to connect to. 
 
-Current supported FLAVOR options are:
+Current supported FLAVOR choices are:
 `postgresql`, `mysql`, `sqlite` ,`oracle`, and `mssql`
 Which correspond to
 [PostgreSQL](https://www.postgresql.org/), [MySQL](https://www.mysql.com/), [SQLite](https://sqlite.org), [Oracle](https://oracle.com), and [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/default.aspx). More flavor compatibility is coming soon.
@@ -44,7 +44,7 @@ Additionally, be sure to use the `--schema` argument if you need to load files i
 
 While SQL Auto Import expects a comma-delimited, CSV (`.csv`) file by default, you can specify a different file extension through the `--extension` argument. If your files are not comma-delimited, you will also need to use the `--delimiter`argument. For example, for tab-separated files use `--delimiter \t`. For pipe-delimited files, use `--delimiter |`.
 
-There are additional options to help with flexibility and automation needs, such as `-s` and `-y`. For more information, use the `--help` argument. Its full output is shown below for your convenience:
+There are additional arguments to help with flexibility and automation needs, such as `-s` and `-y`. For more information, use the `--help` argument. Its full output is shown below for your convenience:
 ```
 usage: sqlautoimport [--license] [-h] [-v] --flavor
                      {postgres,postgresql,mysql,sqlite,sqlite3,oracle,mssql}
