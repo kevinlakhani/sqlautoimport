@@ -96,6 +96,7 @@ Optional Arguments:
 	 - [x] ~~Support for different delimiters and file extensions (e.g. `.tsv`)~~
 	 - [ ] Support for specifying modes other than `replace` (e.g. `append`)
 	 - [ ] Support for `.json` files
+	 - [ ] `--prefix` and `--suffix` options to prepend/append to table names
 	 - [ ] Option to recursively search for files in `DIRECTORY`
 	 - [x] ~~Support for schema specification~~
 	 - [ ] Performance tuning: specify chunk size and/or auto-select settings based on data size
