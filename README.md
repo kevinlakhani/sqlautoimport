@@ -1,7 +1,12 @@
 # <img src="https://raw.githubusercontent.com/kevinlakhani/sqlautoimport/1fb8a56c1e288cacfbc07ba997b5656be08c16e7/icon/icon.svg" alt="icon" height="30"/> SQL Auto Import (sqlautoimport)
-<img style="display:inline-block;" src="https://img.shields.io/badge/made%20with-Python-blue">
-<img style="display:inline-block;" src="https://img.shields.io/github/license/kevinlakhani/sqlautoimport"> 
-<img style="display:inline-block;" src="https://img.shields.io/github/v/tag/kevinlakhani/sqlautoimport?label=version">
+
+<table style="table-collapse: collapse; border: none;">
+<tr>
+<td><img src="https://img.shields.io/badge/made%20with-Python-blue"></td>
+<td><img src="https://img.shields.io/github/license/kevinlakhani/sqlautoimport"></td>
+<td><img src="https://img.shields.io/github/v/tag/kevinlakhani/sqlautoimport?label=version"></td>
+</tr>
+</table>
 
 SQL Auto Import is a command-line interface (CLI) tool, written in [Python](https://www.python.org/)®, that allows you to quickly create/populate or replace tables in a SQL database with multiple CSV files.
 
