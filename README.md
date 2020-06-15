@@ -1,20 +1,21 @@
-
 # <img src="https://raw.githubusercontent.com/kevinlakhani/sqlautoimport/1fb8a56c1e288cacfbc07ba997b5656be08c16e7/icon/icon.svg" alt="icon" height="30"/> SQL Auto Import (sqlautoimport)
-SQL Auto Import is a command-line interface tool, written in [Python](https://www.python.org/)®, that allows you to quickly create, populate, and/or replace tables in a SQL database with multiple source files.
+<img src="https://img.shields.io/badge/made%20with-Python-blue">
+<img src="https://img.shields.io/github/license/kevinlakhani/sqlautoimport"> 
+<img src="https://img.shields.io/github/v/tag/kevinlakhani/sqlautoimport?label=version">
 
-This alleviates the hassle of manually writing `CREATE TABLE` statements and laboriously importing files one-by-one. Just point the SQL Auto Import tool to the directory containing your files and enter your database credentials - let SQL Auto Import do the rest.
+SQL Auto Import is a command-line interface (CLI) tool, written in [Python](https://www.python.org/)®, that allows you to quickly create/populate or replace tables in a SQL database with multiple CSV files.
 
-PostreSQL, MySQL, SQLite, MSSQL (Microsoft SQL Server/T-SQL), and Oracle SQL flavors are supported. More flavors are on the [project roadmap](#roadmap).
+PostreSQL, MySQL, SQLite, MSSQL (Microsoft SQL Server/T-SQL), and Oracle dialects are supported.
 
-Worried about security or privacy? SQL Auto Import is open-source, so you can [view the source code](https://github.com/kevinlakhani/sqlautoimport/blob/master/sqlautoimport.py) to investigate any concerns. If you find an issue, report it [here](https://github.com/kevinlakhani/sqlautoimport/issues)!
+SQL Auto Import is available for Windows, macOS, and Linux
 
 # Downloads
 
 ## Windows
 
-64-bit Download: [v2.0.0 Portable 64-bit executable file (.exe)](https://github.com/kevinlakhani/sqlautoimport/raw/master/sqlautoimport.exe)
+64-bit Download: [Portable 64-bit executable file (.exe)](https://github.com/kevinlakhani/sqlautoimport/raw/master/sqlautoimport.exe)
 
-32-bit Download: [v2.0.0 Portable 32-bit executable file (.exe)](https://github.com/kevinlakhani/sqlautoimport/raw/master/sqlautoimport-32.exe)
+32-bit Download: [Portable 32-bit executable file (.exe)](https://github.com/kevinlakhani/sqlautoimport/raw/master/sqlautoimport-32.exe)
 
 ## macOS, Linux, and others
 In progress. 
@@ -26,19 +27,14 @@ Dependencies listed in [requirements.txt](https://github.com/kevinlakhani/sqlaut
 # Usage
 Open Command Prompt in the directory your copy of `sqlautoimport.exe` (or `sqlautoimport-32.exe`) is located. Alternatively, you can point the Command Prompt to the full directory path where your executable is located.
 
-For regular usage, you must specify the `FLAVOR`, `HOST`, `PORT`, `DATABASE`, `USERNAME`, and `PASSWORD` to connect to. 
+For regular usage, you must specify the FLAVOR, HOST, PORT, DATABASE, USERNAME, and PASSWORD to connect to. 
 
-Current supported `FLAVOR` choices are:
-
+Current supported FLAVOR options are:
 `postgresql`, `mysql`, `sqlite` ,`oracle`, and `mssql`
+Which correspond to
+[PostgreSQL](https://www.postgresql.org/), [MySQL](https://www.mysql.com/), [SQLite](https://sqlite.org), [Oracle](https://oracle.com), and [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/default.aspx). More flavor compatibility is coming soon.
 
-These correspond to:
-
-[PostgreSQL](https://www.postgresql.org/), [MySQL](https://www.mysql.com/), [SQLite](https://sqlite.org), [Oracle](https://oracle.com), and [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/default.aspx). 
-
-More flavor compatibility is coming soon.
-
-You will probably also want to include the `DIRECTORY` where your files are located, but if you don't it will be assumed that the local directory contains the files you want to import to your database. 
+You will probably also want to include the DIRECTORY where your files are located, but if you don't it will be assumed that the local directory contains the files you want to import to your database. 
 
 Here's an example command:
 ```
@@ -49,8 +45,8 @@ Additionally, be sure to use the `--schema` argument if you need to load files i
 
 While SQL Auto Import expects a comma-delimited, CSV (`.csv`) file by default, you can specify a different file extension through the `--extension` argument. If your files are not comma-delimited, you will also need to use the `--delimiter`argument. For example, for tab-separated files use `--delimiter \t`. For pipe-delimited files, use `--delimiter |`.
 
-There are additional arguments to help with flexibility and automation needs, such as `-s` and `-y`. For more information, use the `--help` argument. Its full output is shown below for your convenience:
-```
+There are additional options to help with flexibility and automation needs, such as `-s` and `-y`. For more information, use the `--help` argument. Its full output is shown below for your convenience:
+<pre>
 usage: sqlautoimport [--license] [-h] [-v] --flavor
                      {postgres,postgresql,mysql,sqlite,sqlite3,oracle,mssql}
                      --host HOST --port PORT --database DATABASE --username
@@ -89,15 +85,15 @@ Optional Arguments:
   -q, --quiet           Quiet mode. Minimal ouput.
   -s, --silent          Silent mode. No output except confirmations.
   -y, --yes             Skip all confirmations. WARNING: This is dangerous.
-```
+</pre>
+
 
 # Roadmap
  - [x] ~~Implement `argparse` library for more flexible command-line usage~~ 
 	 - [x] ~~Support for different delimiters and file extensions (e.g. `.tsv`)~~
-	 - [ ] Support for specifying modes other than `replace` (e.g. `append`)
+	 - [x] ~~Support for specifying modes other than `replace` (e.g. `append`)~~
 	 - [ ] Support for `.json` files
-	 - [ ] `--prefix` and `--suffix` options to prepend/append to table names
-	 - [ ] Option to recursively search for files in `DIRECTORY`
+	 - [ ] Option to recursively search for files in DIRECTORY
 	 - [x] ~~Support for schema specification~~
 	 - [ ] Performance tuning: specify chunk size and/or auto-select settings based on data size
  - [ ] macOS and Linux bundles
