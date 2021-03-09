@@ -208,7 +208,7 @@ Continue? [y/n]: ''')
                         ):
                             mode = "replace" if i == 0 else "append"
                             cdf.to_sql(
-                                import_files[x][:import_files[x].index(str(args.extension))].lower(),
+                                import_files[x][:import_files[x].index(str(args.extension))-1].lower(),
                                 engine,
                                 index=False,
                                 if_exists=mode,
