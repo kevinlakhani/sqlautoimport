@@ -19,9 +19,16 @@ SQL Auto Import is available for Windows, macOS, and Linux
 ## macOS, Linux, and others
 In progress. 
 
-For now, use [sqlautoimport.py](https://github.com/kevinlakhani/sqlautoimport/blob/master/sqlautoimport.py) with Python. 
+For now, use [sqlautoimport.py](https://github.com/kevinlakhani/sqlautoimport/blob/master/sqlautoimport.py) with Python, as described in the next section. 
 
-Dependencies listed in [requirements.txt](https://github.com/kevinlakhani/sqlautoimport/blob/master/requirements.txt) will also need to be installed.
+## Python
+
+
+ 1. Make sure [Python](https://www.python.org/downloads/) is installed on your machine.
+ 2.  Optionally, use a  [virtual environment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) for the following steps
+ 3. Open a command line (Windows) or terminal (Mac/Linux) window and navigate to the directory containing `sqlautoimport.py`
+ 4. In the window enter`pip install -r requirements.txt`
+ 5. After requirements install, follow the directions below in the "Usage" section, replacing `sqlautoimport.exe` with `sqlautoimport.py`
 
 # Usage
 Open Command Prompt in the directory your copy of `sqlautoimport.exe` (or `sqlautoimport-32.exe`) is located. Alternatively, you can point the Command Prompt to the full directory path where your executable is located.
@@ -81,7 +88,7 @@ Optional Arguments:
                         Source file(s) delimiter. Comma (,) by default.
   --extension EXTENSION
                         Source file(s) extension. Defaults to csv.
-  -q, --quiet           Quiet mode. Minimal ouput.
+  -q, --quiet           Quiet mode. Minimal output.
   -s, --silent          Silent mode. No output except confirmations.
   -y, --yes             Skip all confirmations. WARNING: This is dangerous.
 </pre>
