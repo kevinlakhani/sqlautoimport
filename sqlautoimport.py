@@ -7,7 +7,7 @@ import json
 import sys
 import argparse
 
-version = '2.0.0'
+version = '2.0.1'
 art = f'''
  _____  _____  _
 /  ___||  _  || |
