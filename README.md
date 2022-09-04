@@ -17,7 +17,7 @@ SQL Auto Import is available for Windows, macOS, and Linux
 32-bit Download: [Portable 32-bit executable file (.exe)](https://github.com/kevinlakhani/sqlautoimport/raw/master/sqlautoimport-32.exe)
 
 ## macOS, Linux, and others
-In progress. 
+Planned for future release. 
 
 For now, use [sqlautoimport.py](https://github.com/kevinlakhani/sqlautoimport/blob/master/sqlautoimport.py) with Python, as described in the next section. 
 
